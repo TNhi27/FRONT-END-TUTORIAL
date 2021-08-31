@@ -1,0 +1,174 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero {
+  width: auto;
+  height: 100vh;
+  background-color: black;
+  padding: 0px 100px;
+}
+
+.hero .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+
+.hero .top .logo {
+  width: 160px;
+  cursor: pointer;
+}
+
+.hero .top .icon-container {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .top .icon-container .icon-img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.hero .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .content-container .text-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 90px;
+}
+
+.hero .content-container .text-container h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.hero .content-container .text-container h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.hero .content-container .text-container p {
+  color: white;
+  margin-bottom: 50px;
+}
+
+.hero .content-container .text-container button {
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.hero .content-container .text-container button:hover {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.hero .content-container .img-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: red;
+  padding: 50px;
+}
+
+.hero .content-container .img-container .main-img {
+  position: relative;
+}
+
+.hero .content-container .img-container .main-img p {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  opacity: 0.4;
+  position: absolute;
+  left: 50px;
+}
+
+.hero .content-container .img-container .main-img img {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  width: 100%;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+
+.hero .content-container .img-container .list-img {
+  margin-top: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .content-container .img-container .list-img .small-img {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+}
+
+.hero .content-container .img-container .list-img .small-img img {
+  width: 100px;
+  cursor: pointer;
+  -webkit-transform: translate(-40px, 20px) rotate(-20deg);
+          transform: translate(-40px, 20px) rotate(-20deg);
+}
+
+.hero .content-container .img-container .list-img .small-img:nth-child(1) {
+  opacity: 0.7;
+  background-color: #fc3816;
+}
+
+.hero .content-container .img-container .list-img .small-img:nth-child(2) {
+  opacity: 0.7;
+  background-color: #1443c2;
+}
+
+.hero .content-container .img-container .list-img .small-img:nth-child(3) {
+  opacity: 0.7;
+  background-color: #4cdf64;
+}
+
+.hero .content-container .img-container .list-img .small-img:nth-child(4) {
+  opacity: 0.7;
+  background-color: #26e0e0;
+}
+/*# sourceMappingURL=style.css.map */
