@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  min-height: 100vh;
+  width: auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.7)), to(rgba(4, 9, 30, 0.7))), url("./img/background.jpg");
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("./img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2% 6%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav a > img {
+  width: 160px;
+}
+
+nav .fas {
+  display: none;
+  cursor: pointer;
+}
+
+nav .nav-link {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+
+nav .nav-link ul > li {
+  display: inline-block;
+  padding: 10px 18px;
+  list-style: none;
+}
+
+nav .nav-link ul > li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav .nav-link ul > li::after {
+  content: " ";
+  background: red;
+  width: 0%;
+  height: 2px;
+  display: block;
+  margin: auto;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+nav .nav-link ul > li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 60px;
+}
+
+.text-box p {
+  margin: 30px 60px;
+}
+
+.text-box a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 30px;
+  font-size: 15px;
+  background: transparent;
+  border: 1px solid white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.text-box a:hover {
+  background-color: #e04242;
+  border: 1px solid #e04242;
+}
+
+/*---------- Course ---------- */
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.course p {
+  padding-top: 20px;
+}
+
+.course .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.course .row .course-col {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  background-color: #ddd7d7;
+  padding: 20px 12px;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.course .row .course-col:hover {
+  -webkit-box-shadow: 0 0 20px 0;
+          box-shadow: 0 0 20px 0;
+}
+
+/*---------- Campus ---------- */
+.campus {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.campus p {
+  margin: 20px 0;
+}
+
+.campus .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.campus .row .campus-col {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.campus .row .campus-col img {
+  width: 100%;
+  display: block;
+}
+
+.campus .row .campus-col .layer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.campus .row .campus-col .layer h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.campus .row .campus-col .layer:hover {
+  background-color: rgba(228, 0, 0, 0.7);
+}
+
+.campus .row .campus-col .layer:hover h3 {
+  opacity: 1;
+  bottom: 50%;
+}
+
+.testimonials {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.testimonials p {
+  margin: 20px 0px;
+}
+
+.testimonials .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.testimonials .row .test-col {
+  -ms-flex-preferred-size: 44%;
+      flex-basis: 44%;
+  text-align: left;
+  border-radius: 10px;
+  background: #f5abce;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px;
+  margin-bottom: 5%;
+}
+
+.testimonials .row .test-col img {
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.testimonials .fas {
+  color: red;
+}
+
+.contact {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(./img/banner2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./img/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  border-radius: 10px;
+}
+
+.contact h1 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 30px;
+  font-size: 15px;
+  background: transparent;
+  border: 1px solid white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.contact a:hover {
+  background-color: #e04242;
+  border: 1px solid #e04242;
+}
+
+footer {
+  text-align: center;
+  width: 80%;
+  margin: 50px auto;
+}
+
+footer h3 {
+  margin-bottom: 10px;
+}
+
+footer .icon {
+  margin-top: 20px;
+}
+
+footer .icon .fab {
+  padding: 10px;
+  color: red;
+}
+
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 30px;
+  }
+  nav .fas {
+    display: block;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+  }
+  nav .nav-link {
+    position: absolute;
+    top: 0;
+    display: none;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    text-align: left;
+    background: red;
+    z-index: 2;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  nav .nav-link ul {
+    padding: 30px 20px;
+  }
+  nav .nav-link ul li {
+    display: block;
+  }
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */
