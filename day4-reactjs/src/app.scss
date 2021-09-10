@@ -1,0 +1,17 @@
+.app{
+    height: 600px;
+    .session{
+        width: 100%;
+        height: 550px;
+        background-color: #64C9CF;
+        position: relative;
+        top: 70px;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+        >*{
+            width: 100%;
+            height: 550px;
+            scroll-snap-align: start;
+        }
+    }
+}
